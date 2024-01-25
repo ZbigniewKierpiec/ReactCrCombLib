@@ -1,0 +1,65 @@
+.box {
+  grid-column: 1 / span 12;
+  grid-row: 1 / span 8;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.outputs {
+  grid-column: 5 / span 4;
+  grid-row: 1 / span 1;
+  height: 100%;
+  //   background-color: rgb(107, 170, 44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: black;
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-align: center;
+  }
+}
+
+.outputsBox {
+  grid-column: 1 / span 12;
+  grid-row: 2 / span 7;
+  // background-color: #f8f7f9;
+  overflow-x: visible;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item {
+  width: 30%;
+  // height: 7rem;
+
+  text-transform: capitalize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  justify-items: flex-end;
+
+  .p {
+    font-size: 3rem;
+    font-weight: 200;
+    color: black;
+    justify-self: flex-start;
+    letter-spacing: -.2rem;
+  }
+  .gap{
+    letter-spacing:.2rem;
+  }
+
+  span {
+    font-size: 2.3rem;
+
+    color: rgba(0, 0, 0, 0.393);
+    align-self: baseline;
+    justify-self: flex-start;
+  }
+}

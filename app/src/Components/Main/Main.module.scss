@@ -1,0 +1,28 @@
+@import "./src/index.scss";
+.main {
+  // margin: 0 auto;
+  position: absolute;
+
+  // left:70px !important;
+  right: 0;
+  width: 96.1%;
+  width: 96.1%;
+  width: 1850px;
+
+  width: calc(99.7% - 70px);
+  right: 0 !important;
+  height: 79vh;
+  height: calc(84svh - 10svh);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+
+  background-color: #faf9fc;
+
+  // z-index: -1 !important;
+  transition: width 0.2s linear;
+  //  margin-left: 30rem !important;
+}
+
+.active {
+  width: calc(100% - 205px);
+}

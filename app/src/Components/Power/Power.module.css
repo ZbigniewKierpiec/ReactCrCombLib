@@ -1,0 +1,136 @@
+.box {
+  margin: 0 auto;
+  width: 85%;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 85%;
+  height: 100%;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.topLeft {
+  padding-right: 2rem;
+  grid-column: 2/span 3;
+  grid-row: 3/span 7;
+  overflow-x: visible;
+  overflow-y: scroll;
+  color: black;
+  cursor: pointer;
+}
+.topLeft p {
+  font-size: 4rem;
+}
+
+.PDU {
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.PDU p {
+  font-size: 3rem;
+  color: black;
+}
+
+.powerAll {
+  height: 8rem;
+  grid-column: 2/span 3;
+  grid-row: 11/span 1;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  border: 2px solid black;
+  color: #2B61A4;
+  cursor: pointer;
+}
+.powerAll:active {
+  border: 2px solid rgba(0, 0, 0, 0.297);
+}
+.powerAll:active:active {
+  color: rgba(0, 0, 0, 0.297);
+}
+.powerAll span {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+.powerAll ion-icon {
+  font-size: 2rem;
+}
+
+.topRight {
+  grid-column: 6/span 6;
+  grid-row: 2/span 10;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.boxTwo {
+  width: 100%;
+  height: 7rem;
+  border-bottom: 1px solid black;
+  padding: 0 1rem;
+  padding-left: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding-right: 2rem;
+}
+.boxTwo ion-icon {
+  font-size: 2rem;
+}
+
+.boxTwoLeft {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: black !important;
+}
+.boxTwoLeft ion-icon {
+  color: black !important;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.boxTwoLeft span {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.active {
+  background-color: rgb(57, 57, 176);
+}
+
+.sample {
+  width: 4rem;
+  height: 2.5rem;
+  background-color: green;
+  margin-right: 2rem;
+  border-radius: 0.4rem;
+}
+
+.icon {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=Power.module.css.map */

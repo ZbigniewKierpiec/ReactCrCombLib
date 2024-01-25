@@ -1,0 +1,123 @@
+.container {
+  grid-row: 1 / span 12;
+  grid-column: 1 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  // padding: 16px;
+  // display: flex;
+  // align-items: flex-end;
+  // justify-content: center;
+  // flex-direction: column;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  grid-column: 4 / span 6;
+  grid-row: 1 / span 7;
+
+  // background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.clockface {
+  width: 250px;
+
+  height: 250px;
+
+  border-radius: 50%;
+  background-color: whitesmoke;
+  background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hand {
+  position: absolute;
+  transform-origin: 50% 100%;
+  background-color: #393e46;
+}
+
+.secondshand {
+  width: 5px;
+  height: 110px;
+  // background-color: transparent !important;
+  // background-color: rgba(255, 255, 255, 0.5) !important;
+   background-color:#FAF9FC !important;
+
+
+}
+.secondshand::after {
+  position: absolute;
+  top: -2.5rem;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  content: "";
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #0861a4;
+  z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 !important;
+}
+
+.mask {
+  width: 200px;
+  height: 200px;
+  background-color: #faf9fc !important;
+  /* z-index: 999999999999999999999999999999999999999999999999 !important; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smole {
+  position: relative;
+  width: 70%;
+  height: 70%;
+  background-color: #faf9fc !important;
+  border-radius: 50%;
+  // -webkit-box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.75);
+  // -moz-box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.75);
+  // box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ion-icon {
+    font-size: 9rem;
+  }
+}
+
+.value {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  // background-color:rgb(173, 216, 230);
+  z-index: 99;
+
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: 4rem;
+  }
+}

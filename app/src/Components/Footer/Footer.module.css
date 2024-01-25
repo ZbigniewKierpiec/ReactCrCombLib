@@ -1,0 +1,229 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+:root {
+  --color-brand--1: #ffb545;
+  --color-brand--2: #00c46a;
+  --color-dark--0: #242a2e;
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: #d6dee0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  box-sizing: border-box;
+  font-family: monospace;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-moz-selection {
+  background-color: transparent !important;
+}
+
+::selection {
+  background-color: transparent !important;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  /* color: var(--color-light--2); */
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-y: scroll;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-overflow-scrolling: touch; /* Enables momentum scrolling in iOS */
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+body.light-mode {
+  background-color: white;
+}
+body.dark-mode {
+  background-color: #121316;
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-light--3);
+}
+
+input:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--1);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+* button {
+  cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+  -moz-backface-visibility: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+    font-size: 42.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #fdfcff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer.darkmode {
+  background: #1a1c1e !important;
+}
+
+.volume {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 80em) {
+  .volume {
+    width: 50%;
+  }
+}
+
+.volume ion-icon {
+  font-size: 4rem;
+  color: white;
+}
+
+.volume span {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #535f70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.volume span:nth-child(2),
+span:nth-child(4) {
+  background-color: #0861a4;
+}
+
+.slider {
+  width: 50rem;
+  height: 100%;
+}
+
+.color {
+  position: absolute;
+  right: 0;
+  margin-right: 4rem;
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #535f70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color:active {
+  background-color: #909cad;
+}
+.color.darkmode {
+  background-color: #bbc7db !important;
+}
+
+.color ion-icon {
+  font-size: 4rem;
+  color: white;
+}
+
+.footer span:nth-child(1).darkmode {
+  background-color: #bbc7db;
+}
+
+.footer span:nth-child(1).darkmode ion-icon {
+  color: black;
+}
+
+.footer span:nth-child(2).darkmode {
+  background-color: #9fcaff;
+}
+
+.footer span:nth-child(2).darkmode ion-icon {
+  color: black;
+}
+
+.footer span:nth-child(4).darkmode {
+  background-color: #9fcaff;
+}
+
+.footer span:nth-child(4).darkmode ion-icon {
+  color: black;
+}/*# sourceMappingURL=Footer.module.css.map */

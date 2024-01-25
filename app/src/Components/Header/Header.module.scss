@@ -1,0 +1,93 @@
+@import "../../index.scss";
+
+.header {
+  width: 100%;
+  height: 140px;
+  height: 15.9vh;
+  height: 14vh;
+  // height: 14rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #625a72;
+  background-color: #fdfcff;
+  // background-color: #625a72;
+  // transition: 0.2s linear;
+
+  &.darkmode {
+    background: #1a1c1e !important;
+    color: white !important;
+  }
+}
+
+.left {
+  width: 22%;
+  // max-width: 22%;
+  height: 100%;
+
+  display: grid;
+  @include respond(tsw1060) {
+    width: 30%;
+  }
+}
+
+.time {
+  font-size: 3rem;
+  font-size: 2.4rem;
+  margin-left: 4rem;
+
+  text-transform: uppercase;
+}
+
+.right {
+  width: 25%;
+  height: 100%;
+
+  display: grid;
+}
+
+.left .top {
+  display: flex;
+
+  align-items: center;
+}
+.left .bottom {
+  display: flex;
+  margin-left: 4rem;
+  align-items: center;
+}
+.h2 {
+  font-size: 4.7rem;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  @include respond(tsw1060) {
+    font-size: 4rem !important;
+  }
+}
+
+.right .top {
+  display: flex;
+  justify-content: flex-end;
+
+  align-items: center;
+  font-size: 2.4rem;
+  margin-right: 3rem;
+}
+.right .bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 3rem;
+}
+.h1 {
+  font-size: 4.7rem;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  @include respond(tsw1060) {
+    font-size: 4rem !important;
+  }
+}

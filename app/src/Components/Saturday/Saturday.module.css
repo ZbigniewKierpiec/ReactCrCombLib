@@ -1,0 +1,159 @@
+.ui {
+  grid-row: 4/span 6;
+  grid-column: 4/span 6;
+}
+
+.progresscontainer {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 50% !important;
+  transform: rotate(45deg);
+  background-color: #ff00ff;
+  z-index: 1000000000000000000000000000000000000000000 !important;
+}
+
+.progresscircle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.conicfill {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 100%, 10 100%);
+          clip-path: polygon(0 10%, 100% 10%, 100% 100%, 10 100%);
+  transform: rotate(90deg);
+  z-index: -2;
+}
+
+.percentagetext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #333;
+  z-index: -2;
+}
+
+.mask {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+}
+
+.extraMask {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background-color: #e2e2e6 !important;
+  transform-origin: center center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px 2px 19px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 2px 19px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 2px 19px -3px rgba(0, 0, 0, 0.75);
+}
+.extraMask ion-icon {
+  font-size: 9rem;
+  transform: rotate(-45deg);
+}
+
+.handle {
+  position: fixed !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg); /* Rotate the handle itself */
+  width: 1rem;
+  height: 50%;
+  cursor: pointer;
+  background-color: #0861a4;
+  transform-origin: top;
+  transition: all 0.3 linear !important;
+  background-color: transparent;
+}
+.handle::after {
+  content: "";
+  position: absolute;
+  bottom: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 1000000000000000000000;
+}
+
+.main {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50% !important;
+  z-index: -1 !important;
+  transform: rotate(-90deg);
+  background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+}
+
+.smole {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.smole ion-icon {
+  font-size: 9rem;
+  transform: rotate(90deg);
+  background-color: transparent !important;
+}
+
+.handleTwo {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(34deg);
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  z-index: 99;
+  transform-origin: -5%;
+  background-color: transparent;
+}
+.handleTwo::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 6.6rem;
+  transform: translateY(50%);
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 30000000000000000 !important;
+}/*# sourceMappingURL=Saturday.module.css.map */

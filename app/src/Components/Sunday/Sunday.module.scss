@@ -1,0 +1,334 @@
+.ui {
+    grid-row: 4 / span 6;
+    grid-column: 4 / span 6;
+    // display: inline-block;
+    // background-color: red !important;
+    // justify-content: center;
+    // align-items: center;
+    // position: relative;
+  }
+  // .progresscontainer {
+  //   width: 300px;
+  //   height: 300px;
+  //   position: relative;
+  //   border-radius: 50% !important;
+  //   transform: rotate(45deg);
+  //   background-color: #ff00ff;
+  //   z-index: 999999999999999999999999999999999999999999 !important;
+  // }
+  
+  // .progresscircle {
+  //   width: 100%;
+  //   height: 100%;
+  //   border-radius: 50%;
+  //   background-color: #f0f0f0;
+  //   position: relative;
+  
+  //   // transform-origin: center center;
+   
+  // }
+  
+  // .conicfill {
+  //   width: 100%;
+  //   height: 100%;
+  //   border-radius: 50%;
+  //   background: conic-gradient(
+  //     #ff0000 0%,
+  //     #ff00ff 25%,
+  //     #0000ff 50%,
+  //     #00ff00 75%,
+  //     #ff0000 100%
+  //   );
+  //   clip-path: polygon(0 10%, 100% 10%, 100% 100%, 10 100%);
+  //   transform: rotate(90deg);
+  //   z-index: -2;
+   
+  // }
+  
+  // .percentagetext {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   font-size: 24px;
+  //   color: #333;
+  //   z-index: -2;
+  // }
+  
+  // .mask {
+  //   width: 80%;
+  //   height: 80%;
+  //   border-radius: 50%;
+  //   // background-color: #faf9fc;
+  //   background-color: green;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+  
+  // }
+  
+  // .extraMask {
+  //   width: 70%;
+  //   height: 70%;
+  //   border-radius: 50%;
+  //   background-color: #e2e2e6 !important;
+  //   transform-origin: center center;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999988 !important;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   box-shadow: -2px 2px 19px -3px rgba(0, 0, 0, 0.75);
+  //   -webkit-box-shadow: -2px 2px 19px -3px rgba(0, 0, 0, 0.75);
+  //   -moz-box-shadow: -2px 2px 19px -3px rgba(0, 0, 0, 0.75);
+  //   ion-icon {
+  //     font-size: 9rem;
+  //     color: black;
+  //     transform: rotate(-45deg);
+  //   }
+  // }
+  
+  // .handle {
+  //   position: absolute !important;
+  //   // top: 2%;
+  //   // left: 2%;
+  //   // transform: translate(-2%, -2%);
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50% , -50%) rotate(45deg);
+  
+  //   width: 1rem;
+  //   height: 50%;
+  //   cursor: pointer;
+  
+  //   background-color: #0861a4;
+  //   // transform: rotate(45deg);
+  //   transform-origin:top;
+  //   &::after{
+  //     content: '';
+  //     position: absolute;
+  //     bottom: -3.7rem;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //     width: 3rem;
+  //     height: 3rem;
+  //     background-color: black;
+  //     z-index: 999999999999999999999999999999999999999999999999999999999999999999 !important;
+  //   }
+  // }
+  .progresscontainer {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 50% !important;
+    transform: rotate(45deg);
+    background-color: #ff00ff;
+    z-index: 999999999999999999999999999999999999999999 !important;
+  }
+  
+  .progresscircle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+  
+  .conicfill {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    // background: conic-gradient(
+    //   #ff0000 0%,
+    //   #ff00ff 25%,
+    //   #0000ff 50%,
+    //   #00ff00 75%,
+    //   #ff0000 100%
+    // );
+    clip-path: polygon(0 10%, 100% 10%, 100% 100%, 10 100%);
+    transform: rotate(90deg);
+    z-index: -2;
+  }
+  
+  .percentagetext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #333;
+    z-index: -2;
+  }
+  
+  .mask {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color:green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+  
+  }
+  
+  .extraMask {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: #e2e2e6 !important;
+    transform-origin: center center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999988 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px 2px 19px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 2px 19px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 19px -3px rgba(0, 0, 0, 0.75);
+    ion-icon {
+      font-size: 9rem;
+      // color: black;
+      transform: rotate(-45deg);
+    }
+  }
+  
+  .handle {
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg); /* Rotate the handle itself */
+    width: 1rem;
+    height: 50%;
+    cursor: pointer;
+    background-color: #0861a4;
+    transform-origin:top;
+    transition: all .3 linear !important;
+    background-color: transparent;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 5rem;
+      height: 5rem;
+      background-color: black;
+      border-radius: 50%;
+      z-index: 999999999999999999999}
+    }
+
+    .main{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 50% !important;
+        z-index: -1 !important;
+        transform: rotate(-90deg);
+        // background:conic-gradient(red 0deg 45deg , orange 45deg 90deg , yellow 90deg 120deg , lightgreen 120deg 140deg  )
+      
+        // background: conic-gradient(
+        //   from 0deg 
+        //   red 0deg,
+        //   orange 25deg,
+        //   yellow 50deg,
+        //   green 75deg,
+        //   blue 100deg
+        //   to 360deg,
+        // );
+
+
+        // { color: "#e43f00", position: 0 },
+        // { color: "#e43f00", position: 90 },
+        // { color: "#55cc3b", position: 90 },
+        // { color: "#55cc3b", position: 180 },
+        // { color: "#6b0efd", position: 180 },
+        // { color: "#6b0efd", position: 270 },
+        // { color: "#e456ed", position: 270 },
+        // { color: "#e456ed", position: 360 },
+
+        background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+    
+
+
+        // background: conic-gradient(
+          
+        //   #e43f00 0deg,
+        //   #e43f00 90deg,
+        //   #55cc3b 90deg,
+        //   #55cc3b 180deg,
+        //   #6b0efd 180deg,
+        //   #6b0efd 270deg,
+        //   #e456ed 270deg,
+        //   #e456ed 360deg,
+         
+        // );
+
+       
+        //     width: 40px;
+       
+    }
+    .smole{
+       position: absolute;
+width: 150px;
+height: 150px;
+background-color:whitesmoke;
+border-radius: 50%;
+top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+        ion-icon{
+          // color: black;
+          font-size: 9rem;
+          transform: rotate(90deg);
+          background-color: transparent !important;
+          // color: inherit;
+        
+       
+
+        }
+    }
+
+    .handleTwo{
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50% , -50%) rotate(34deg);
+        width: 100px;
+        height: 10px;
+        background-color: black;
+        z-index: 99;
+        transform-origin:-5%;
+   
+      
+        
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 50%;
+           left: 6.6rem;
+
+            transform: translateY(50%);
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            // background-color:#fae410;
+            border-radius: 50%;
+            z-index: 29999999999999999 !important;
+        }
+    }

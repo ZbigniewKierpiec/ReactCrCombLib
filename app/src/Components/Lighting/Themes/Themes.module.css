@@ -1,0 +1,53 @@
+.box {
+  width: 100%;
+  height: 7rem;
+  border-bottom: 1px solid black;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding-right: 2rem;
+}
+.box ion-icon {
+  font-size: 2rem;
+}
+
+.boxLeft {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.boxLeft p {
+  text-align: left;
+  font-size: 4rem;
+}
+.boxLeft ion-icon {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.boxLeft span {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.sample {
+  width: 4rem;
+  height: 2.5rem;
+  background-color: green;
+  margin-right: 2rem;
+  border-radius: 0.4rem;
+}
+
+.icon {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  opacity: 0;
+}/*# sourceMappingURL=Themes.module.css.map */

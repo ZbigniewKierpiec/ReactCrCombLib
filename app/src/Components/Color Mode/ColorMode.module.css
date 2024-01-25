@@ -1,0 +1,84 @@
+.box {
+  position: absolute !important;
+  width: 17rem;
+  height: 22rem;
+  background-color: #e2e2e6;
+  background-color: #e2e2e6;
+  background-color: #333538;
+  bottom: 9rem;
+  border-radius: 4rem;
+  right: 0;
+  margin-right: 4rem;
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  grid-template-rows: 1fr;
+  transition: background 0.2s linear;
+  z-index: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 !important;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.left div {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.left div:nth-child(1) {
+  background-color: #ff77d5;
+  cursor: pointer;
+}
+
+.left div:nth-child(2) {
+  background-color: #669b00;
+}
+
+.left div:nth-child(3) {
+  background-color: #004a80;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.active {
+  background-color: #333538;
+  background-color: #e2e2e6;
+}
+
+.sun {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sun ion-icon {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.darkmode ion-icon {
+  color: white !important;
+}
+
+.moon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.moon ion-icon {
+  font-size: 2.5rem;
+  color: black;
+  transform: rotate(20deg);
+}/*# sourceMappingURL=ColorMode.module.css.map */

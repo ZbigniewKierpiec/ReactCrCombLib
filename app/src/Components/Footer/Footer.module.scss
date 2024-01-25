@@ -1,0 +1,132 @@
+@import "../../index.scss";
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  // height: 9rem;
+
+  background-color: #fdfcff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.darkmode {
+    background: #1a1c1e !important;
+  }
+}
+
+.volume {
+  width: 40%;
+
+  height: 100%;
+  // background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include respond(tsw1060) {
+    width: 50%;
+  }
+}
+
+.volume ion-icon {
+  font-size: 4rem;
+  color: white;
+}
+
+.volume span {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #535f70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.volume span:nth-child(2),
+span:nth-child(4) {
+  background-color: #0861a4;
+}
+
+.slider {
+  // background-color: #fdfcff;
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 50rem;
+  height: 100%;
+
+  // z-index: 999999999999999999999999999 !important;
+  //   width: 100%;
+}
+
+.color {
+  position: absolute;
+  right: 0;
+  margin-right: 4rem;
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #535f70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:active {
+    background-color: #909cad;
+  }
+  &.darkmode {
+    background-color: #bbc7db !important;
+  }
+}
+
+.color ion-icon {
+  font-size: 4rem;
+  color: white;
+}
+
+.footer span:nth-child(1).darkmode {
+  background-color: #bbc7db;
+}
+
+.footer span:nth-child(1).darkmode ion-icon {
+  color: black;
+}
+
+.footer span:nth-child(2).darkmode {
+  background-color: #9fcaff;
+}
+
+.footer span:nth-child(2).darkmode ion-icon {
+  color: black;
+}
+
+.footer span:nth-child(4).darkmode {
+  background-color: #9fcaff;
+}
+
+.footer span:nth-child(4).darkmode ion-icon {
+  color: black;
+}
+
+.info {
+  width: 400px;
+  height: 50px;
+  margin-left: 5rem;
+  background-color: lightblue;
+  display: flex;
+ justify-content: space-around;
+ align-items: center;
+  p {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: monospace;
+    font-weight: 900;
+  }
+}
